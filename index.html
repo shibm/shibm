@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh Bhandari | Software Engineer </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #0d0d0d;
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* HERO */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #000, #1a1a1a);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .floating {
+            margin-top: 40px;
+            padding: 20px 40px;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            font-size: 1rem;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* Sections */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            border-left: 5px solid #ffdd57;
+            padding-left: 12px;
+            margin-bottom: 25px;
+            animation: fadeIn 1s ease;
+        }
+
+        /* Cards */
+        .card {
+            background: #1b1b1b;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.05);
+            transition: 0.3s;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px rgba(255,255,255,0.1);
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            margin: 6px;
+            padding: 8px 14px;
+            background: #222;
+            border-radius: 8px;
+            border: 1px solid #444;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background: #ffdd57;
+            color: #000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            opacity: 0.7;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 14px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffdd57;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+</nav>
+
+<!-- HERO SECTION -->
+<header>
+    <h1>Saurabh Bhandari</h1>
+    <p>Backend Engineer</p>
+    <p>📧 bhandarisaurbh@gmail.com | 📱 +91-8394021097 | 📍 Kausani, Uttarakhand</p>
+
+    <div class="floating">4+ Years Experience • Software Engineer • Scalable Systems</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Professional Summary</h2>
+    <div class="card">
+        Experienced Backend Engineer with 4+ years of expertise in designing, developing, 
+        and deploying scalable systems. Proven track record in building high-performance APIs, 
+        optimizing databases, and leading production deployments. Strong proficiency in JavaScript 
+        ecosystem, cloud infrastructure, and CI/CD pipelines.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card skills">
+        <strong>Languages:</strong>
+        <span>JavaScript</span><span>Python</span><span>PHP</span><br><br>
+
+        <strong>Frameworks:</strong>
+        <span>Node.js</span><span>Express</span><span>React.js</span>
+        <span>Next.js</span><span>Nest.js</span><br><br>
+
+        <strong>Databases:</strong>
+        <span>MongoDB</span><span>SQL</span><span>Mongoose</span><br><br>
+
+        <strong>Tools:</strong>
+        <span>Git</span><span>Bitbucket</span><span>JIRA</span>
+        <span>Linux</span><span>Socket.io</span><br><br>
+
+        <strong>Cloud & DevOps:</strong>
+        <span>AWS (EC2, S3, Elastic Beanstalk, CodeBuild)</span>
+        <span>CI/CD (GitHub Actions, Bitbucket Pipelines)</span>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+        <h3>Backend Developer | Hydear Tech Pvt. Ltd. (Aug 2024 – Present)</h3>
+        <ul>
+            <li>Designed scalable backend services improving API performance.</li>
+            <li>Optimized SQL databases for high-traffic systems.</li>
+            <li>Developed Banking, Recharge, and Booking APIs.</li>
+            <li>Automated deployment workflows and led production deployments.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Backend Developer | Autrob Technologies Pvt. Ltd. (Jan 2023 – Jul 2024)</h3>
+        <ul>
+            <li>Improved application scalability by 40%.</li>
+            <li>Deployed apps using AWS services.</li>
+            <li>Implemented CI/CD pipelines.</li>
+            <li>Managed server configuration with 99.9% uptime.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Backend Developer | GeekersBrain (Mar 2022 – Nov 2022)</h3>
+        <ul>
+            <li>Built REST APIs & integrated third-party services.</li>
+            <li>Optimized MongoDB queries for 60% faster data retrieval.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Backend Developer | Hanging Panda (Aug 2021 – Feb 2022)</h3>
+        <ul>
+            <li>Developed backend services for web & mobile apps.</li>
+            <li>Collaborated with frontend teams.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Key Projects</h2>
+
+    <!-- 1 -->
+    <div class="card">
+        <h3>UNIRR – Smart Staff Management App (Backend Lead)</h3>
+        <p>Tech: Node.js, Express, MongoDB, Real-time Sync</p>
+        Architected attendance, payroll, travel logs, leave, task modules & compliance systems
+        with real-time app-to-dashboard synchronization.
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+        <h3>Swayee – Dating App</h3>
+        <p>Tech: Node.js, Express, MongoDB, Socket.io</p>
+        Built profiles, authentication, matching logic, real-time chat & privacy controls.
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <h3>Upniva – Fintech Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB, Payment Gateways</p>
+        Created APIs for loans, credit cards, insurance, investment calculators & secure payments.
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <h3>Interactify – CRM Feature Modules</h3>
+        <p>Tech: Node.js, Express, SQL, MongoDB, CI/CD</p>
+        Built lead management, email automation, calculators, RBAC & WhatsApp automation.
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <h3>SwiftDial – Call Tracking & CRM Integration</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Developed dashboards, call tracking, lead modules & real-time monitoring APIs.
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <h3>Sunshine Wellness – Role Based Wellness Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB, AWS</p>
+        Built scheduling, booking, payment APIs & CI/CD pipeline deployment.
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+        <h3>Ventout – AI Friend App</h3>
+        <p>Tech: Node.js, Express, MongoDB, AI SDKs</p>
+        Integrated AI chatbot, mood tracking, safety filters & conversation logging.
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+        <h3>44resources – Marketplace Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Built job listings, proposals, reviews, payments & admin moderation tools.
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+        <h3>Pacecourt – Fullstack Sports Booking Platform</h3>
+        <p>Tech: Next.js, MongoDB, S3</p>
+        Built booking/payment modules, deployed website & managed hosting pipelines.
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+        <h3>Tool44 – SME Automation Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Built automation workflow APIs, multi-tenant roles & SDK-integrated services.
+    </div>
+
+    <!-- 11 -->
+    <div class="card">
+        <h3>Gourmet Hub – Food Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Developed menu, order, scheduling & meal-plan APIs with transactional flow accuracy.
+    </div>
+
+    <!-- 12 -->
+    <div class="card">
+        <h3>BBT Institute – EdTech Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Created APIs for courses, tests, scoring, student tracking & secure access layers.
+    </div>
+
+    <!-- 13 -->
+    <div class="card">
+        <h3>Internal Employee Dashboard</h3>
+        <p>Tech: Node.js, Express, MongoDB, AWS S3</p>
+        Built employee profiles, attendance, reporting & RBAC permissions.
+    </div>
+
+    <!-- 14 -->
+    <div class="card">
+        <h3>Coupon App – Notification Platform</h3>
+        <p>Tech: Node.js, Express, MongoDB</p>
+        Built REST APIs, background jobs for alerts, optimized schemas & third-party integrations.
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>MCA</strong> – GBPEC Pauri, Garhwal</p>
+        <p><strong>BCA</strong> – Kumaun University Almora</p>
+    </div>
+
+    <h2>Additional Information</h2>
+    <div class="card">
+        <p><strong>Languages:</strong> English, Hindi, Nepali</p>
+        <p><strong>Date of Birth:</strong> December 14, 1998</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Saurabh Bhandari — Backend Engineer
+</footer>
+
+</body>
+</html>
