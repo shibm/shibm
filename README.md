@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 
-**shibm/shibm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
 Professional Summary
 Backend Engineer with 4+ years of experience designing, developing, and deploying scalable
 systems. Skilled in building APIs, optimising databases, and implementing CI/CD pipelines.
