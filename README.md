@@ -10,7 +10,7 @@ Proficient in the JavaScript and Go ecosystem, cloud infrastructure (AWS, GCP, A
 10,000+ concurrent users, and automating deployments with 90% fewer errors.
 
 
-- 🔭 I’m currently working on .... JAVA
+- 🔭 I’m currently working on .... 
 - 🌱 I’m currently learning ... 🍽️
 - 💬 Ask me about ... _____________
 - 📫 How to reach me: ... _________
